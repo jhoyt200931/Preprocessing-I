@@ -47,10 +47,25 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 @fontstyle: "Arial", sans-serif;
+
+@bgColor: skyblue;
+
+@topMargin: 10px auto;
+
+.h2() {
+	font-size: 2rem;
+}
+
 .flex() {
 	display: flex;
 }
+
+.flexDirection(){
+	flex-direction: column;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -58,10 +73,81 @@ table {
 
 html, body {
 	height: 100%;
-	max-width: 1000px;
 	align-items: center;
+	font-size: 62.5%;
 }
 .container {
 	font-family: @fontstyle;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 6px solid #E6E6FA;
+	nav {
+		width: 100%;
+		.flex();
+		justify-content: space-evenly;
+		margin-top: 20px;
+		a{
+			font-size: 1.6rem;
+			text-decoration: none;
+			color: #000;
+		} /* links */
+	} /* navigation section */
+
+	.heading {
+		background-color: #ADD8E6;
+		margin-top: 20px;
+		
+		.flex();
+		.flexDirection();
+		img {
+			height: 300px;
+			width: 30%;
+			border-radius: 15px;
+			box-shadow: 5px #000;
+		} /* resume image */
+		h1 {
+			margin: @topMargin;
+			font-size: 3rem;
+		} /* Name */
+		span {
+			margin: @topMargin;
+			font-size: 2.5rem;
+		} /* tagline */
+	} /* heading section */
+	.mainContent {
+		background-color: @bgColor;
+		.flex();
+		.column1{
+			text-align: center;
+			width: 50%;
+			margin: @topMargin;
+			margin-right: 5%;
+			h2 {
+				.h2();
+			}
+			p {
+				font-size: 1.6rem;
+				line-height: 1.3;
+			}
+		}
+		.column2 {
+			width: 45%;
+			text-align: center;
+			margin: @topMargin;
+			h2 {
+				.h2();
+			}
+			ul {
+				li {
+					font-size: 1.6rem;
+					margin: @topMargin;
+				}
+			}
+		}
+	}
+	.work {
+		background-color: @bgColor;
+	}
 }
 
