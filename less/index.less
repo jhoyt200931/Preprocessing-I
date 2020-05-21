@@ -88,10 +88,17 @@ html, body {
 		.flex();
 		justify-content: space-evenly;
 		margin-top: 20px;
+		@media(max-width: 500px) {
+			.flexDirection();
+			margin-left: 40%;
+		}
 		a{
 			font-size: 1.6rem;
 			text-decoration: none;
 			color: #000;
+			@media(max-width: 500px) {
+				margin: 5px 0;
+			}
 		} /* links */
 	} /* navigation section */
 
@@ -106,6 +113,10 @@ html, body {
 			width: 30%;
 			border-radius: 15px;
 			box-shadow: 5px #000;
+			@media(max-width: 500px) {
+				margin-left: 35%;
+				height: 150px;
+			}
 		} /* resume image */
 		h1 {
 			margin: @topMargin;
@@ -164,17 +175,28 @@ html, body {
 		.list{
 			.flex();
 			margin-left: 20%;
+			@media(max-width: 500px) {
+				margin-left: 15%;
+			}
 			.company {
 				.flex();
 				.flexDirection();
 				align-content: center;
 				padding: 5px;
+				span {
+					@media(max-width: 500px) {
+						margin: 18px 0 10px 0;
+						width: 30%;
+					}
+				}
+				
 			}
 			.role {	
 				.flex();
 				.flexDirection();
 				align-content: center;
 				padding: 5px;
+				
 			}
 			.date {	
 				.flex();
@@ -185,6 +207,10 @@ html, body {
 			span {
 				font-size: 1.6rem;
 				margin-top: 5px;
+				@media(max-width: 500px) {
+					margin: 10px 0 10px 0;
+					width: 30%;
+				}
 			}
 		}
 	}
@@ -195,6 +221,9 @@ html, body {
 		align-items: flex-end;
 		a{
 			margin-bottom: 15px;
+			@media(max-width: 500px) {
+				margin: 5px 0;
+			}
 		}
 	}
 }

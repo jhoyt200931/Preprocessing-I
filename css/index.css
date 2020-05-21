@@ -153,10 +153,21 @@ body {
   margin-top: 20px;
   /* links */
 }
+@media (max-width: 500px) {
+  .container nav {
+    flex-direction: column;
+    margin-left: 40%;
+  }
+}
 .container nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #000;
+}
+@media (max-width: 500px) {
+  .container nav a {
+    margin: 5px 0;
+  }
 }
 .container .heading {
   background-color: #ADD8E6;
@@ -172,6 +183,12 @@ body {
   width: 30%;
   border-radius: 15px;
   box-shadow: 5px #000;
+}
+@media (max-width: 500px) {
+  .container .heading img {
+    margin-left: 35%;
+    height: 150px;
+  }
 }
 .container .heading h1 {
   margin: 10px auto;
@@ -229,11 +246,22 @@ body {
   display: flex;
   margin-left: 20%;
 }
+@media (max-width: 500px) {
+  .container .work .list {
+    margin-left: 15%;
+  }
+}
 .container .work .list .company {
   display: flex;
   flex-direction: column;
   align-content: center;
   padding: 5px;
+}
+@media (max-width: 500px) {
+  .container .work .list .company span {
+    margin: 18px 0 10px 0;
+    width: 30%;
+  }
 }
 .container .work .list .role {
   display: flex;
@@ -251,6 +279,12 @@ body {
   font-size: 1.6rem;
   margin-top: 5px;
 }
+@media (max-width: 500px) {
+  .container .work .list span {
+    margin: 10px 0 10px 0;
+    width: 30%;
+  }
+}
 .container footer {
   background-color: #ADD8E6;
   height: 100px;
@@ -259,4 +293,9 @@ body {
 }
 .container footer a {
   margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .container footer a {
+    margin: 5px 0;
+  }
 }
