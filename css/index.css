@@ -142,6 +142,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: 6px solid #E6E6FA;
+  background-color: skyblue;
   /* navigation section */
   /* heading section */
 }
@@ -209,6 +210,53 @@ body {
   font-size: 1.6rem;
   margin: 10px auto;
 }
+.container h2 {
+  text-align: center;
+  background-color: skyblue;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
 .container .work {
   background-color: skyblue;
+}
+.container .work .listHead {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #000;
+}
+.container .work .list {
+  display: flex;
+  margin-left: 20%;
+}
+.container .work .list .company {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 5px;
+}
+.container .work .list .role {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 5px;
+}
+.container .work .list .date {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 5px;
+}
+.container .work .list span {
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+.container footer {
+  background-color: #ADD8E6;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+.container footer a {
+  margin-bottom: 15px;
 }

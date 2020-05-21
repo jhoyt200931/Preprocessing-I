@@ -82,6 +82,7 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	border: 6px solid #E6E6FA;
+	background-color: @bgColor;
 	nav {
 		width: 100%;
 		.flex();
@@ -146,8 +147,54 @@ html, body {
 			}
 		}
 	}
+	h2 {
+		text-align: center;
+		background-color: @bgColor;
+		.h2();
+		margin-bottom: 15px;
+	}
 	.work {
 		background-color: @bgColor;
+		.listHead {
+			font-size: 1.8rem;
+			.flex();
+			justify-content: space-evenly;
+			border-bottom: 1px solid #000;
+		}
+		.list{
+			.flex();
+			margin-left: 20%;
+			.company {
+				.flex();
+				.flexDirection();
+				align-content: center;
+				padding: 5px;
+			}
+			.role {	
+				.flex();
+				.flexDirection();
+				align-content: center;
+				padding: 5px;
+			}
+			.date {	
+				.flex();
+				.flexDirection();
+				align-content: center;
+				padding: 5px;
+			}
+			span {
+				font-size: 1.6rem;
+				margin-top: 5px;
+			}
+		}
+	}
+	footer {
+		background-color: #ADD8E6;
+		height: 100px;
+		.flex();
+		align-items: flex-end;
+		a{
+			margin-bottom: 15px;
+		}
 	}
 }
-
