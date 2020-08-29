@@ -1,1 +1,301 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  align-items: center;
+  font-size: 62.5%;
+}
+.container {
+  font-family: "Arial", sans-serif;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px solid #E6E6FA;
+  background-color: skyblue;
+  /* navigation section */
+  /* heading section */
+}
+.container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  /* links */
+}
+@media (max-width: 500px) {
+  .container nav {
+    flex-direction: column;
+    margin-left: 40%;
+  }
+}
+.container nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #000;
+}
+@media (max-width: 500px) {
+  .container nav a {
+    margin: 5px 0;
+  }
+}
+.container .heading {
+  background-color: #ADD8E6;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* resume image */
+  /* Name */
+  /* tagline */
+}
+.container .heading img {
+  height: 300px;
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 5px #000;
+}
+@media (max-width: 500px) {
+  .container .heading img {
+    margin-left: 35%;
+    height: 150px;
+  }
+}
+.container .heading h1 {
+  margin: 10px auto;
+  font-size: 3rem;
+}
+.container .heading span {
+  margin: 10px auto;
+  font-size: 2.5rem;
+}
+.container .mainContent {
+  background-color: skyblue;
+  display: flex;
+}
+.container .mainContent .column1 {
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+  margin-right: 5%;
+}
+.container .mainContent .column1 h2 {
+  font-size: 2rem;
+}
+.container .mainContent .column1 p {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+.container .mainContent .column2 {
+  width: 45%;
+  text-align: center;
+  margin: 10px auto;
+}
+.container .mainContent .column2 h2 {
+  font-size: 2rem;
+}
+.container .mainContent .column2 ul li {
+  font-size: 1.6rem;
+  margin: 10px auto;
+}
+.container h2 {
+  text-align: center;
+  background-color: skyblue;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.container .work {
+  background-color: skyblue;
+}
+.container .work .listHead {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #000;
+}
+.container .work .list {
+  display: flex;
+  margin-left: 20%;
+}
+@media (max-width: 500px) {
+  .container .work .list {
+    margin-left: 15%;
+  }
+}
+.container .work .list .company {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .container .work .list .company span {
+    margin: 18px 0 10px 0;
+    width: 30%;
+  }
+}
+.container .work .list .role {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 5px;
+}
+.container .work .list .date {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 5px;
+}
+.container .work .list span {
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+@media (max-width: 500px) {
+  .container .work .list span {
+    margin: 10px 0 10px 0;
+    width: 30%;
+  }
+}
+.container footer {
+  background-color: #ADD8E6;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+.container footer a {
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .container footer a {
+    margin: 5px 0;
+  }
+}
